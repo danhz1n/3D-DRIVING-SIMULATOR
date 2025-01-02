@@ -1,50 +1,65 @@
-3D DRIVING SIMULATOR
+3D Driving Simulator
 
 
-
-
-RigidbodyController
 Overview
-The RigidbodyController script provides basic movement and jumping functionality for objects in Unity using the Rigidbody component. It handles keyboard inputs to control movement along the horizontal and vertical axes and allows the object to jump when grounded. This script is ideal for implementing player-controlled objects in 3D environments, such as character controllers or vehicles.
+The 3D Driving Simulator is a Unity-based application designed to provide a realistic and immersive driving experience. This simulator replicates various driving scenarios with detailed environments, accurate vehicle dynamics, and customizable settings. It serves as a tool for driver training, traffic research, and autonomous vehicle testing.
 
 Features
-Smooth Movement: Move the object along the horizontal and vertical axes using keyboard inputs.
-Jump Mechanic: Enables jumping functionality when the object is grounded.
-Physics-Based Control: Uses Unity's Rigidbody component for realistic physics interactions.
-Customizable Parameters: Easily adjust movement speed and jump force in the Unity Inspector.
+Realistic Vehicle Physics: Simulates acceleration, braking, steering, and collision dynamics.
+Immersive 3D Environments: Includes urban, rural, and highway scenarios with detailed graphics.
+Customizable Scenarios: Configure weather conditions, traffic density, and road layouts.
+Traffic AI: Simulates traffic flow and interactions with dynamic AI-controlled vehicles.
+Modular Design: Easily extendable to include new terrains, vehicles, or features.
+Multi-Platform Support: Compatible with Windows, macOS, and VR devices (if integrated).
 Requirements
-Unity Version: 2019.4 LTS or later (recommended 2021.3 LTS or newer).
-Components:
-A GameObject with a Rigidbody component attached.
-A Collider component (e.g., BoxCollider or CapsuleCollider) to detect ground contact.
+
+
+
+
+Hardware:
+Minimum:
+CPU: Intel Core i5 or equivalent
+GPU: NVIDIA GTX 960 or equivalent
+RAM: 8 GB
+Storage: 2 GB of available space
+Recommended:
+CPU: Intel Core i7 or equivalent
+GPU: NVIDIA RTX 2060 or equivalent
+RAM: 16 GB
+VR Headset (Optional): Oculus Rift, HTC Vive, or compatible device
+Software:
+Unity Version: 2021.3 LTS or later
+Platform: Windows, macOS
 Installation
-Create a new script in Unity and name it RigidbodyController.
-Copy and paste the code into the script file.
-Attach the script to the GameObject you want to control.
-Ensure the GameObject has a Rigidbody component.
-Adjust the moveSpeed and jumpForce values in the Unity Inspector to fit your gameplay needs.
+Clone the repository:
+bash
+Sao chép mã
+git clone https://github.com/your-username/3D-Driving-Simulator.git  
+Open the project in Unity (2021.3 LTS or later).
+Install necessary dependencies (see Dependencies section).
+Build and run the project for your target platform.
 Usage
-Movement Controls:
-
-W/S or Up/Down Arrow Keys: Move forward and backward.
-A/D or Left/Right Arrow Keys: Move left and right.
-Jumping:
-
-Press the Spacebar to jump when the object is grounded.
-Customizing Behavior:
-
-Move Speed: Adjust the moveSpeed value to change how fast the object moves.
-Jump Force: Modify the jumpForce value to increase or decrease the jump height.
-Script Details
-Properties:
-public float moveSpeed: Controls how fast the object moves.
-public float jumpForce: Sets the force applied when jumping.
-Key Functions:
-void Start(): Initializes the Rigidbody component.
-void Update(): Handles movement and jumping based on user input.
-bool IsGrounded(): Uses a raycast to check if the object is grounded.
+Launch the simulator.
+Select a scenario from the main menu.
+Customize settings (e.g., weather, traffic density).
+Start driving using keyboard controls, a game controller, or a steering wheel.
+Controls:
+W/A/S/D or Arrow Keys: Accelerate, steer, and brake.
+Spacebar: Handbrake.
+R: Reset vehicle position.
+Esc: Pause menu.
+Project Structure
+Assets/: Contains all Unity assets, including scripts, models, and prefabs.
+Scenes/: Predefined driving scenarios (urban, rural, highway).
+Scripts/: Core logic for vehicle dynamics, traffic AI, and UI.
+Resources/: Textures, materials, and audio files.
+Dependencies
+Unity Standard Assets (Vehicle package)
+Post-Processing Stack (for enhanced visuals)
+Input System Package (for customizable controls)
 Future Enhancements
-Add double-jump functionality for more complex gameplay.
-Implement dash mechanics for quick bursts of speed.
-Integrate animations for smoother visual transitions during movement and jumping.
-Allow for customizable ground detection distance.
+Add more diverse terrains (e.g., desert, mountain roads).
+Integrate advanced traffic AI using reinforcement learning.
+Support for motion platforms and haptic feedback.
+Expand VR compatibility for enhanced immersion.
+Add driver monitoring features using biometric sensors.
