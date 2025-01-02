@@ -1,3 +1,8 @@
+3D DRIVING SIMULATOR
+
+
+
+
 RigidbodyController
 Overview
 The RigidbodyController script provides basic movement and jumping functionality for objects in Unity using the Rigidbody component. It handles keyboard inputs to control movement along the horizontal and vertical axes and allows the object to jump when grounded. This script is ideal for implementing player-controlled objects in 3D environments, such as character controllers or vehicles.
